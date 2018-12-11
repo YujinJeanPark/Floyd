@@ -1,0 +1,9 @@
+void floyd(int n, const number W[][], number D[][])
+{
+  index i,j,k;
+  D = W;
+  for(k=1; k<=n; k++)
+    for(i=1; i<=n; i++)
+      for(j=1; j<=n; j++)
+        D[i][j] = minimum(D[i][j], D[i][k] + D[k][j]);
+}
