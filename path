@@ -1,0 +1,8 @@
+void path(index q,r)
+{
+  if(P[q][r] != 0) {
+    path(q,P[q][r]);
+    cout << "v" << P[q][r];
+    path(P[q][r],r);
+  }
+}
